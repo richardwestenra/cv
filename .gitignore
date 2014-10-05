@@ -5,3 +5,5 @@ dist
 bower_components
 .ftpauth
 zips
+*.sublime-project
+*.sublime-workspace
