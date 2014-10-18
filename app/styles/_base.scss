@@ -11,7 +11,7 @@ $m_larger: 1400px;
 $m_huge: 1600px;
 
 // Colours:
-$c_bg: #f0f0f0;
+$c_bg: #f9f9f9;
 $c_base: #333;
 $c_base_light: #777;
 $c_primary: steelblue;
@@ -38,7 +38,10 @@ html, body {
     font-smoothing: antialiased;
     background: $c_bg;
     color: $c_base;
-    font-size: 100%;
+    font-size: 90%;
+    @media screen and (min-width: $m_small) {
+        font-size: 100%;
+    }
     @media print {
         font-size: 80%;
         background: $c_opposite;
