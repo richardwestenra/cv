@@ -28,14 +28,13 @@ h2 {
 	font-weight: normal;
 	color: $c_base_light;
 }
-h3, h4 {
-	margin: 1em 0 0.5em;
-}
 h3 {
 	text-transform: uppercase;
 	color: $c_base_light;
+	margin: 1em 0 0.7em;
 }
 h4 {
+	margin: 0 0 0.3em;
 }
 .main {
 	padding: 30px 0;
@@ -96,19 +95,20 @@ ul {
         content: '';
         display: inline-block;
         background: $c_base;
-        width: 4px;
-        height: 4px;
+        $d: 0.3em;
+        width: $d;
+        height: $d;
         vertical-align: middle;
         margin: 0 0.4em 0 0.8em;
         border-radius: 50%;
     }
 }
 .exp {
-	h4 {
-		margin: 1.5em 0 0.5em;
+	& > li {
+		margin-bottom: 1.5em;
 	}
 	p {
-		margin: 0 0 0.5em;
+		margin: 0 0 0.3em;
 		font-style: italic;
 		font-size: $base_text;
 	}
@@ -125,17 +125,22 @@ ul {
 	}
 }
 .tech {
-	li {
+	& > li {
 		line-height: 1.3em;
-		li {
-			font-size: $base_text;
-		}
+		margin-bottom: 1em;
+	}
+	li li {
+		font-size: $base_text;
 	}
 }
 .edu {
+	li {
+		margin-bottom: 1em;
+	}
 	p {
 		margin: 0;
 		font-size: $base_text;
+		font-style: italic;
 	}
 }
 
