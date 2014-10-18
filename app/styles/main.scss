@@ -2,7 +2,7 @@
 // bower:scss
 // endbower
 
-@import "base";
+@import "base","fontface";
 
 body {
 }
@@ -18,16 +18,24 @@ a {
 	@include clearfix;
 }
 header {
-	p {
-		margin: 0;
-		padding: 0.2em 0;
-		font-size: 0.9em;
-	}
-	@media screen and (min-width: $m_medium){
+	@media print, (min-width: $m_medium){
 		padding-left: 40%;
 	}
+	p {
+		margin: 0;
+		padding: 0.1em 0;
+		font-size: 0.85em;
+		a {
+			white-space: nowrap;
+			text-decoration: none;
+			margin-right: 10px;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
 }
-@media screen and (min-width: $m_medium){
+@media print, (min-width: $m_medium){
 	.rightCol {
 		float: right;
 		width: 60%;
@@ -55,14 +63,29 @@ ul {
 	margin: 2em 0;
 }
 h1 {
-	margin: 0 0 0.5em;
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 2.6em;
+}
+h2 {
+	text-transform: uppercase;
+	font-size: 1.4em;
+	margin: 0 0 0.6em;
+	font-weight: normal;
+	color: $c_base_light;
 }
 h3, h4 {
+	text-transform: uppercase;
+	color: $c_base_light;
 	margin: 1em 0 0.5em;
 }
-// h4 {
-// 	margin: 1em 0 0;
-// }
+h3 {}
+h4 {}
+.competencies {
+	li {
+		font-size: $base_text;
+	}
+}
 
 .exp {
 }

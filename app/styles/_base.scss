@@ -11,20 +11,22 @@ $m_larger: 1400px;
 $m_huge: 1600px;
 
 // Colours:
-$c_bg: #e0e0e0;
+$c_bg: #fafafa;
 $c_base: #333;
-$c_primary: #007bb6;
+$c_base_light: #777;
+$c_primary: steelblue;
 $c_opposite: #fff;
 
 // Other:
 $il: "../images/"; //image location
+$base_text: 0.9em;
 
 // @Font-face:
 @mixin serif {
     font-family: serif;
 }
 @mixin sansSerif {
-    font-family: sans-serif;
+    font-family: 'Droid Sans', sans-serif;
 }
 
 // Default styles:
@@ -32,9 +34,15 @@ html, body {
     margin: 0;
     padding: 0;
     @include sansSerif;
-    background: $c_bg;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
+    background: $c_bg;
+    color: $c_base;
+    font-size: 100%;
+    @media print {
+        font-size: 80%;
+        background: $c_opposite;
+    }
 }
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.1em;
@@ -44,8 +52,10 @@ li, p, blockquote {
 }
 
 .wrapper {
-    width: 90%;
-    margin: 0 5%;
+    @media screen {
+        width: 90%;
+        margin: 0 5%;
+    }
     @media only screen and (min-width: $m_medium) {
         width: $m_medium;
         margin: 0 auto;
