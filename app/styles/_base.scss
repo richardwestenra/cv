@@ -59,7 +59,7 @@ li, p, blockquote {
         width: 90%;
         margin: 0 5%;
     }
-    @media only screen and (min-width: $m_medium) {
+    @media only screen and (min-width: $m_medium * 1.1) {
         width: $m_medium;
         margin: 0 auto;
     }
