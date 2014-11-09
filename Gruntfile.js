@@ -357,22 +357,14 @@ module.exports = function (grunt) {
       }
     },
 
-    /* jshint camelcase:false */
-    ftp_push: {
-      your_target: {
+    buildcontrol: {
+      dist: {
         options: {
-          authKey: 'ftphost',
-          host: 'nbed_ftpHost',
-          // port: 21,
-          dest: '/mash-tun.net/0distilled/cv/'
-        },
-        files: [ // Enable Dynamic Expansion, Src matches are relative to this path, Actual Pattern(s) to match
-          {
-            expand: true,
-            // cwd: 'test',
-            src: ['<%= config.dist %>','<%= config.dist %>/**/*']
-          }
-        ]
+          remote: 'git@github.com:richardwestenra/cv.git',
+          branch: 'gh-pages',
+          commit: true,
+          push: true
+        }
       }
     },
 
@@ -388,6 +380,7 @@ module.exports = function (grunt) {
       }
     },
 
+    /* jshint camelcase:false */
     notify_hooks: {
       options: {
         enabled: true,
@@ -490,7 +483,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('deploy', [
     'default',
-    'ftp_push',
+    'buildcontrol',
     'notify:deploy'
   ]);
 
