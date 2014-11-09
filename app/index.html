@@ -15,9 +15,6 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
 
     <!--[if lt IE 9]>
     <!-- build:js scripts/vendor/respond.js -->
@@ -26,6 +23,7 @@
     <![endif]-->
 
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <meta name="robots" content="noindex">
   </head>
   <body>
     <div class="main wrapper">
@@ -43,7 +41,7 @@
                 <p><span><a href="https://www.distilled.net/">Distilled</a></span> <span>London, UK</span> <span>2011 &ndash; Present</span></p>
                 <ul>
                   <li>Original member of the rapidly growing and award-winning creative team at one of the world's most respected and influential online marketing agencies.</li>
-                  <li>Created HTML/CSS/JS websites, web-apps, data-visualizations, infographics, quizzes, games and tools.</li>
+                  <li>Created HTML/CSS/JS websites, web-apps, mashups, data-visualizations, infographics, quizzes, games and tools.</li>
                   <li>Clients include a variety of large companies across Europe and North America, including Bridgestone, Macy&rsquo;s, Staples, Thomson and The Trainline.</li>
                   <li>Created pieces which have been featured in Mashable, the Huffington Post, Upworthy, Lifehacker, and in Visual.ly&rsquo;s <em>Top 20 Great Visualisations of 2011</em>.</li>
                   <li>Worked on projects that have won a Dadi award and been nominated for New Media Age and Information is Beautiful awards.</li>
@@ -75,21 +73,7 @@
                   <li>Collected food orders from Christchurch stores and drove them to the field in often testing conditions in the venerable Temple truck.</li>
                   <li>Assisted with routine operations and maintenance in a variety of roles, including goods lift operation, construction work, avalanche control, rope tow operation &amp; maintenance, kitchen staff, and even instructing beginner snowboarders.</li>
                 </ul>
-              </li><!--
-              <li>
-                <h4>Inner-city Courier</h4>
-                <p><span>FedEx Express</span> <span>Christchurch, NZ</span> <span>2008</span></p>
-                <ul>
-                  <li>Operated company vehicles and provided courteous and efficient delivery and pick-up of packages, whilst also checking shipments for conformance to FedEx features of service, and providing all related customer service functions</li>
-                </ul>
               </li>
-              <li>
-                <h4>Teaching Assistant</h4>
-                <p><span>University of Canterbury</span> <span>Christchurch, NZ</span> <span>2007</span></p>
-                <ul>
-                  <li>Prepared and delivered weekly tutorials for undergraduate Philosophy students, provided in-office personal tutoring, liaised with lecturers, marked essays</li>
-                </ul>
-              </li> -->
             </ul>
         </li>
         <li class="section">
@@ -127,6 +111,7 @@
                 <li>SVG</li>
                 <li>JavaScript</li>
                 <li>jQuery</li>
+                <li><abbr title="JavaScript Object Notation">JSON</abbr></li>
                 <li>d3</li>
                 <li>Sublime Text</li>
                 <li>Yeoman</li>
@@ -160,9 +145,10 @@
                 <li>Terminal</li>
                 <li><abbr title="Regular Expressions">Regex</abbr></li>
                 <li><abbr title="Object-Oriented Programming">OOP</abbr></li>
-                <li><abbr title="Node Package Manager">NPM</abbr></li>
+                <li><abbr title="Node Package Manager/Node Packaged Modules">NPM</abbr></li>
                 <li>Bootstrap</li>
                 <li>Balsamiq</li>
+                <li><abbr title="YAML Ain&rsquo;t Markup Language">YAML</abbr></li>
               </ul>
             </li>
             <li>
@@ -210,13 +196,6 @@
         </li>
       </ul>
     </div>
-
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -225,9 +204,5 @@
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-9812933-1');ga('send','pageview');
     </script>
-
-    <!-- build:js({app,.tmp}) scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
 </body>
 </html>
