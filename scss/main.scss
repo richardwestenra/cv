@@ -2,8 +2,6 @@
 
 @import "base","fontface";
 
-body {
-}
 a {
 	color: $c_primary;
 	@media print {
@@ -108,7 +106,7 @@ ul {
 			content: '•';
 			vertical-align: top;
 		}
-    }
+  }
 }
 .exp {
 	& > li {
@@ -116,8 +114,7 @@ ul {
 	}
 	p {
 		margin: 0 0 0.3em;
-		font-style: italic;
-		font-size: $base_text;
+    font-size: $base_text;
 	}
 	ul {
 		list-style: disc;
