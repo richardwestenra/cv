@@ -82,7 +82,7 @@ li, p, blockquote {
     &:-moz-placeholder { @content; }
     &::-moz-placeholder { @content; }
     &:-ms-input-placeholder { @content; }
-    &::-webkit-input-placeholder { @content; } 
+    &::-webkit-input-placeholder { @content; }
 }
 @mixin svg($img){
     .no-js &,

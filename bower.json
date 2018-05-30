@@ -1,7 +1,0 @@
-{
-  "name": "cv",
-  "private": true,
-  "dependencies": {
-    "respond": "~1.4.2"
-  }
-}
