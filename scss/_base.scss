@@ -18,23 +18,14 @@ $c_primary: steelblue;
 $c_opposite: #fff;
 
 // Other:
-$il: "../images/"; //image location
 $base_text: 0.85em;
-
-// @Font-face:
-@mixin serif {
-  font-family: serif;
-}
-@mixin sansSerif {
-  font-family: "Droid Sans", sans-serif;
-}
 
 // Default styles:
 html,
 body {
   margin: 0;
   padding: 0;
-  @include sansSerif;
+  font-family: "Droid Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   background: $c_bg;
@@ -83,35 +74,8 @@ blockquote {
   box-sizing: border-box;
 }
 
-// mixins:
-@mixin input-placeholder {
-  &.placeholder {
-    @content;
-  }
-  &:-moz-placeholder {
-    @content;
-  }
-  &::-moz-placeholder {
-    @content;
-  }
-  &:-ms-input-placeholder {
-    @content;
-  }
-  &::-webkit-input-placeholder {
-    @content;
-  }
-}
-@mixin svg($img) {
-  .no-js &,
-  .no-svg & {
-    background-image: url($il + $img + ".png"); //image location
-  }
-  .svg & {
-    background-image: url($il + $img + ".svg"); //image location
-  }
-}
-
 // Helper mixins (from h5bp):
+
 // For image replacement.
 @mixin ir {
   display: block;
@@ -127,11 +91,13 @@ blockquote {
     display: none;
   }
 }
+
 // Hide from both screenreaders and browsers: h5bp.com/u
 @mixin hidden {
   display: none !important;
   visibility: hidden;
 }
+
 // Hide only visually, but have it available for screenreaders: h5bp.com/v
 @mixin visuallyhidden {
   border: 0;
@@ -143,6 +109,7 @@ blockquote {
   position: absolute;
   width: 1px;
 }
+
 // Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p
 // CAUTION! The .visuallyhidden class is included! If you want your object be both .visuallyhidden and .focusabe use only .focusable class.
 @mixin focusable {
@@ -157,10 +124,12 @@ blockquote {
     width: auto;
   }
 }
+
 // Hide visually and from screenreaders, but maintain layout.
 @mixin invisible {
   visibility: hidden;
 }
+
 // Contain floats: h5bp.com/q
 @mixin clearfix {
   *zoom: 1;
