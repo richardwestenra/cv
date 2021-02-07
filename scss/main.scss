@@ -1,6 +1,6 @@
 //-- Main --//
 
-@import "base","fontface";
+@import "base";
 
 a {
 	color: $c_primary;
@@ -53,6 +53,7 @@ header {
 		font-size: 0.85em;
 		line-height: 1.8em;
 		a {
+      display: inline-block;
 			white-space: nowrap;
 		    &:not(:last-child) {
 				margin-right: 1.6em;
@@ -62,6 +63,13 @@ header {
 			}
 		}
 	}
+  svg {
+    width: 1em;
+    height: 1em;
+    float: left;
+    margin: 0.4em 0.3em 0 0.2em;
+    fill: $c_primary;
+  }
 }
 @media print, (min-width: $m_medium){
 	.rightCol {
