@@ -121,10 +121,10 @@ header svg {
   fill: #3777ad; }
 
 @media print, (min-width: 960px) {
-  .rightCol {
+  .column--right {
     float: right;
     width: 61%; }
-  .leftCol {
+  .column--left {
     float: left;
     width: 32%; } }
 
@@ -138,7 +138,7 @@ ul {
   ul.collapse li {
     display: inline-block; }
 
-.section {
+section {
   margin: 2em 0 3em; }
 
 .exp span:not(:last-child):after,

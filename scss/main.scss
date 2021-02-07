@@ -72,11 +72,11 @@ header {
   }
 }
 @media print, (min-width: $m_medium) {
-  .rightCol {
+  .column--right {
     float: right;
     width: 61%;
   }
-  .leftCol {
+  .column--left {
     float: left;
     width: 32%;
   }
@@ -95,7 +95,7 @@ ul {
     }
   }
 }
-.section {
+section {
   margin: 2em 0 3em;
 }
 .exp span,
