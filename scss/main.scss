@@ -69,6 +69,9 @@ header {
     float: left;
     margin: 0.4em 0.3em 0 0.2em;
     fill: $c_primary;
+    @media print {
+      fill: $c_base_light;
+    }
   }
 }
 @media print, (min-width: $m_medium) {
