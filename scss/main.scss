@@ -3,66 +3,66 @@
 @import "base";
 
 a {
-	color: $c_primary;
-	@media print {
-		color: $c_base;
-	}
-	text-decoration: none;
-	&:hover {
-		text-decoration: underline;
-	}
+  color: $c_primary;
+  @media print {
+    color: $c_base;
+  }
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 h1 {
-	margin: 0;
-	text-transform: uppercase;
-	font-size: 2.6em;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 2.6em;
 }
 h2 {
-	text-transform: uppercase;
-	font-size: 1.4em;
-	margin: 0 0 0.6em;
-	font-weight: normal;
-	color: $c_base_light;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  margin: 0 0 0.6em;
+  font-weight: normal;
+  color: $c_base_light;
 }
 h3 {
-	text-transform: uppercase;
-	color: $c_base_light;
-	margin: 1em 0 0.7em;
+  text-transform: uppercase;
+  color: $c_base_light;
+  margin: 1em 0 0.7em;
 }
 h4 {
-	margin: 0 0 0.3em;
+  margin: 0 0 0.3em;
 }
 abbr {
-	@media screen {
-		border-bottom: 1px dotted #999;
-	}
+  @media screen {
+    border-bottom: 1px dotted #999;
+  }
 }
 .main {
-	padding: 50px 0;
-	@media print {
-		padding: 30px 0 0;
-	}
-	@include clearfix;
+  padding: 50px 0;
+  @media print {
+    padding: 30px 0 0;
+  }
+  @include clearfix;
 }
 header {
-	@media print, (min-width: $m_medium){
-		padding-left: 39%;
-	}
-	p {
-		margin: 0;
-		font-size: 0.85em;
-		line-height: 1.8em;
-		a {
+  @media print, (min-width: $m_medium) {
+    padding-left: 39%;
+  }
+  p {
+    margin: 0;
+    font-size: 0.85em;
+    line-height: 1.8em;
+    a {
       display: inline-block;
-			white-space: nowrap;
-		    &:not(:last-child) {
-				margin-right: 1.6em;
-			}
-			i {
-				margin-right: 0.1em;
-			}
-		}
-	}
+      white-space: nowrap;
+      &:not(:last-child) {
+        margin-right: 1.6em;
+      }
+      i {
+        margin-right: 0.1em;
+      }
+    }
+  }
   svg {
     width: 1em;
     height: 1em;
@@ -71,86 +71,90 @@ header {
     fill: $c_primary;
   }
 }
-@media print, (min-width: $m_medium){
-	.rightCol {
-		float: right;
-		width: 61%;
-	}
-	.leftCol {
-		float: left;
-		width: 32%;
-	}
+@media print, (min-width: $m_medium) {
+  .rightCol {
+    float: right;
+    width: 61%;
+  }
+  .leftCol {
+    float: left;
+    width: 32%;
+  }
 }
 ul {
-	list-style: disc;
-	padding-left: 1.4em;
-	&.noBullet {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
-	&.collapse {
-		li {
-			display: inline-block;
-		}
-	}
+  list-style: disc;
+  padding-left: 1.4em;
+  &.noBullet {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &.collapse {
+    li {
+      display: inline-block;
+    }
+  }
 }
 .section {
-	margin: 2em 0 3em;
+  margin: 2em 0 3em;
 }
-.exp span, .edu span, .collapse li {
-    &:not(:last-child):after {
-        content: '';
-        display: inline-block;
-        background: $c_base;
-        $d: 0.3em;
-        width: $d;
-        height: $d;
-        vertical-align: middle;
-        margin: 0 0.4em 0 0.8em;
-        border-radius: 50%;
-		@media print {
-			background: none;
-			content: '•';
-			vertical-align: top;
-		}
+.exp span,
+.edu span,
+.collapse li {
+  &:not(:last-child):after {
+    content: "";
+    display: inline-block;
+    background: $c_base;
+    $d: 0.3em;
+    width: $d;
+    height: $d;
+    vertical-align: middle;
+    margin: 0 0.4em 0 0.8em;
+    border-radius: 50%;
+    @media print {
+      background: none;
+      content: "•";
+      vertical-align: top;
+    }
   }
 }
 .exp {
-	& > li {
-		margin-bottom: 1.5em;
-	}
-	p {
-		margin: 0 0 0.3em;
+  & > li {
+    margin-bottom: 1.5em;
+  }
+  p {
+    margin: 0 0 0.3em;
     font-size: $base_text;
-	}
-	ul {
-		list-style: disc;
-		li {
-			font-size: $base_text;
-		}
-	}
+  }
+  ul {
+    list-style: disc;
+    li {
+      font-size: $base_text;
+    }
+  }
 }
-.competencies, .resp, .achieve {
-	li {
-		font-size: $base_text;
-	}
+.competencies,
+.resp,
+.achieve {
+  li {
+    font-size: $base_text;
+  }
 }
 .tech {
-	& > li {
-		line-height: 1.3em;
-		margin-bottom: 1em;
-	}
-	li li {
-		font-size: $base_text;
-	}
+  & > li {
+    line-height: 1.3em;
+    margin-bottom: 1em;
+  }
+  li li {
+    font-size: $base_text;
+  }
 }
 .edu {
-	li {
-		margin-bottom: 1.6em;
-	}
-	p {
-		margin: 0;
-		font-size: $base_text;
-	}
+  li {
+    margin-bottom: 1.6em;
+  }
+  p {
+    margin: 0;
+    font-size: $base_text;
+  }
 }
