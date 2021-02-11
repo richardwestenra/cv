@@ -101,8 +101,8 @@ ul {
 section {
   margin: 2em 0 3em;
 }
-.exp span,
-.edu span,
+.experience span,
+.education span,
 .collapse li {
   &:not(:last-child):after {
     content: "";
@@ -121,7 +121,7 @@ section {
     }
   }
 }
-.exp {
+.experience {
   & > li {
     margin-bottom: 1.5em;
   }
@@ -135,15 +135,7 @@ section {
       font-size: $base_text;
     }
   }
-}
-.competencies,
-.resp,
-.achieve {
-  li {
-    font-size: $base_text;
-  }
-}
-.tech {
+.competencies {
   & > li {
     line-height: 1.3em;
     margin-bottom: 1em;
@@ -151,8 +143,7 @@ section {
   li li {
     font-size: $base_text;
   }
-}
-.edu {
+.education {
   li {
     margin-bottom: 1.6em;
   }
