@@ -46,11 +46,11 @@ abbr {
   }
 }
 .main {
+  @include clearfix;
   padding: 50px 0;
   @media print {
     padding: 30px 0 0;
   }
-  @include clearfix;
 }
 header {
   @media print, (min-width: $m_medium) {
