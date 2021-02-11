@@ -99,32 +99,16 @@ ul {
     padding: 0;
     list-style: none;
   }
-  &.collapse {
-    li {
-      display: inline-block;
-    }
-  }
 }
 section {
   margin: 2em 0 3em;
 }
-.experience span,
-.education span,
-.collapse li {
-  &:not(:last-child):after {
-    content: "";
+.inline-list {
+  > * {
     display: inline-block;
-    background: $c_base;
-    $d: 0.3em;
-    width: $d;
-    height: $d;
-    vertical-align: middle;
-    margin: 0 0.4em 0 0.8em;
-    border-radius: 50%;
-    @media print {
-      background: none;
+    &:not(:last-child):after {
       content: "•";
-      vertical-align: top;
+      margin: 0 0.3em 0 0.6em;
     }
   }
 }
