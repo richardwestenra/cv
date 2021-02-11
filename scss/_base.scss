@@ -17,25 +17,24 @@ $c_base_light: #717171;
 $c_primary: #3777ad;
 $c_opposite: #fff;
 
-// Other:
-$base_text: 0.85em;
-
 // Default styles:
 html,
 body {
   margin: 0;
   padding: 0;
+}
+html {
   font-family: "Droid Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  background: $c_bg;
   color: $c_base;
-  font-size: 90%;
+  background: $c_bg;
+  font-size: 69%;
   @media screen and (min-width: $m_small) {
-    font-size: 100%;
+    font-size: 85%;
   }
   @media print {
-    font-size: 80%;
+    font-size: 58%;
     background: $c_opposite;
   }
 }
