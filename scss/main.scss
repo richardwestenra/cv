@@ -20,23 +20,24 @@ h1 {
     font-size: 8.5vw;
   }
 }
-h2 {
+.subtitle {
   text-transform: uppercase;
   margin: 0 0 0.6em;
   font-weight: normal;
   color: $c_base_light;
   font-size: 2.19em;
+  line-height: 1.1;
   @media screen and (max-width: 550px) {
     font-size: 5.5vw;
   }
 }
-h3 {
+h2 {
   font-size: 1.38em;
   text-transform: uppercase;
   color: $c_base_light;
   margin: 1em 0 0.7em;
 }
-h4 {
+h3 {
   font-size: 1.18em;
   margin: 0 0 0.3em;
 }
@@ -56,18 +57,18 @@ header {
   @media print, (min-width: $m_medium) {
     padding-left: 39%;
   }
-  p {
-    margin: 0;
-    line-height: 1.8em;
-    a {
-      display: inline-block;
-      white-space: nowrap;
-      &:not(:last-child) {
-        margin-right: 1.6em;
-      }
-      i {
-        margin-right: 0.1em;
-      }
+}
+.contact {
+  margin: 0;
+  line-height: 1.8em;
+  a {
+    display: inline-block;
+    white-space: nowrap;
+    &:not(:last-child) {
+      margin-right: 1.6em;
+    }
+    i {
+      margin-right: 0.1em;
     }
   }
   svg {
