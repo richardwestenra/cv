@@ -15,9 +15,9 @@ a {
 h1 {
   margin: 0;
   text-transform: uppercase;
-  font-size: 8.5vw;
-  @media (min-width: 400px) {
-    font-size: 3.07em;
+  font-size: 3.4em;
+  @media screen and (max-width: 550px) {
+    font-size: 8.5vw;
   }
 }
 h2 {
@@ -25,9 +25,9 @@ h2 {
   margin: 0 0 0.6em;
   font-weight: normal;
   color: $c_base_light;
-  font-size: 5.5vw;
-  @media (min-width: 400px) {
-    font-size: 1.64em;
+  font-size: 2.19em;
+  @media screen and (max-width: 550px) {
+    font-size: 5.5vw;
   }
 }
 h3 {
