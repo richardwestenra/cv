@@ -41,6 +41,13 @@ h3 {
   font-size: 1.18em;
   margin: 0 0 0.3em;
 }
+h4 {
+  font-size: 1em;
+  margin: 0.5em 0;
+  &:first-of-type {
+    margin-top: 1em;
+  }
+}
 abbr {
   @media screen {
     border-bottom: 1px dotted #999;
@@ -50,7 +57,7 @@ abbr {
   @include clearfix;
   padding: 50px 0;
   @media print {
-    padding: 30px 0 0;
+    padding: 0;
   }
 }
 header {
@@ -103,6 +110,9 @@ ul {
 }
 section {
   margin: 2em 0 3em;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 .inline-list {
   > * {
@@ -110,10 +120,25 @@ section {
     &:not(:last-child):after {
       content: "•";
       margin: 0 0.3em 0 0.6em;
+      font-weight: normal;
     }
   }
 }
 .experience {
+  h3 {
+    font-size: 1.25em;
+    margin: 1em 0 0.5em;
+  }
+  h3, h4 {
+    span:last-child {
+      font-weight: normal;
+    }
+  }
+  h3 {
+    span:last-child {
+      font-size: 0.9em;
+    }
+  }
   & > li {
     margin-bottom: 1.5em;
   }
