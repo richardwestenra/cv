@@ -135,8 +135,11 @@ section {
     }
   }
   h3 {
+    span:not(:last-child):after {
+      font-size: 0.85em;
+    }
     span:last-child {
-      font-size: 0.9em;
+      font-size: 0.8em;
     }
   }
   & > li {
