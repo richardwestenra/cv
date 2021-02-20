@@ -150,9 +150,8 @@ section {
   }
 }
 .competencies {
-  & > li {
-    line-height: 1.3em;
-    margin-bottom: 1em;
+  section {
+    margin: 0 0 1em;
   }
 }
 .education {
