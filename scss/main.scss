@@ -110,6 +110,9 @@ ul {
 }
 section {
   margin: 2em 0 3em;
+  section {
+    margin: 0 0 1.5em;
+  }
   &:last-child {
     margin-bottom: 0;
   }
@@ -149,15 +152,7 @@ section {
     margin: 0;
   }
 }
-.competencies {
-  section {
-    margin: 0 0 1em;
-  }
-}
 .education {
-  li {
-    margin-bottom: 1.6em;
-  }
   p {
     margin: 0;
   }
