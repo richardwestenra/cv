@@ -125,6 +125,9 @@ section {
   }
 }
 .experience {
+  section {
+    margin: 0 0 1.5em;
+  }
   h3 {
     font-size: 1.25em;
     margin: 1em 0 0.5em;
@@ -142,14 +145,8 @@ section {
       font-size: 0.8em;
     }
   }
-  & > li {
-    margin-bottom: 1.5em;
-  }
-  p {
-    margin: 0 0 0.3em;
-  }
   ul {
-    list-style: disc;
+    margin: 0;
   }
 }
 .competencies {
