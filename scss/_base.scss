@@ -18,11 +18,16 @@ $c_primary: #3777ad;
 $c_opposite: #fff;
 
 // Default styles:
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
 }
+
 html {
   font-family: "Droid Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -30,14 +35,17 @@ html {
   color: $c_base;
   background: $c_bg;
   font-size: 69%;
+
   @media screen and (min-width: $m_small) {
     font-size: 85%;
   }
+
   @media print {
     font-size: 58%;
     background: $c_opposite;
   }
 }
+
 h1,
 h2,
 h3,
@@ -46,6 +54,7 @@ h5,
 h6 {
   line-height: 1.1em;
 }
+
 li,
 p,
 blockquote {
@@ -59,13 +68,11 @@ blockquote {
     margin: 0 auto;
   }
 }
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
   padding: 1em 0;
   text-align: center;
-}
-* {
-  box-sizing: border-box;
 }
