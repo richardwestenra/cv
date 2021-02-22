@@ -84,12 +84,18 @@ abbr {
     }
   }
 }
+.grid-group:not(:last-child) {
+  margin-bottom: 3em;
+}
 @media print, (min-width: $m_medium) {
   main {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto auto auto;
     column-gap: 4em;
+  }
+  .grid-group:not(:last-child) {
+    margin-bottom: 0;
   }
   .row-1 {
     grid-row: 1 / 1;
