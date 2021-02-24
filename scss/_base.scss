@@ -34,10 +34,10 @@ html {
   font-smoothing: antialiased;
   color: $c_base;
   background: $c_bg;
-  font-size: 69%;
+  font-size: 90%;
 
   @media screen and (min-width: $m_small) {
-    font-size: 85%;
+    font-size: 95%;
   }
 
   @media print {
@@ -64,7 +64,7 @@ blockquote {
 .wrapper {
   @media screen {
     width: 90%;
-    max-width: $m_medium;
+    max-width: 75em;
     margin: 0 auto;
   }
 }
