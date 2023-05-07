@@ -99,7 +99,7 @@ section {
 @media print, (min-width: $m_medium) {
   main {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2.8fr;
     grid-template-rows: auto 0fr 1fr;
     column-gap: 4em;
   }

@@ -17,6 +17,10 @@ $c_base_light: #717171;
 $c_primary: #3777ad;
 $c_opposite: #fff;
 
+@page {
+  margin: 2em 2em 1em;
+}
+
 // Default styles:
 * {
   box-sizing: border-box;
